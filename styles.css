@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/* ANIMATIONS */
+@keyframes glowing_easter_an {
+  20% {
+    color: #cef4f8;
+  }
+  40% {
+    color: #d1cceb;
+  }
+  60% {
+    color: #fed3d9;
+  }
+  80% {
+    color: #fdf0d7;
+  }
+  100% {
+    color: #c5ebd5;
+  }
+}
+
+body {
+  background-image: url("./easter\ img\ 4.jpg");
+}
+
+#title {
+  color: darkorange;
+  text-align: center;
+  margin-top: 30%;
+  font-size: 5rem;
+  text-shadow: 3px 3px 0.5rem black;
+  /* ANIMATION */
+  animation-name: glowing_easter_an;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 0.3s;
+}
+
+.countdown-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.countdown-container > p {
+  color: yellow;
+  text-shadow: 2px 2px 0.5rem black;
+  font-size: 2.6rem;
+  margin: 0.2rem 0.5rem 0.2rem 0.5rem;
+}
