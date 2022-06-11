@@ -30,7 +30,7 @@ body {
 #title {
   color: darkorange;
   text-align: center;
-  margin-top: 30%;
+  margin-top: 20rem;
   font-size: 5rem;
   text-shadow: 3px 3px 0.5rem black;
   /* ANIMATION */
@@ -39,6 +39,7 @@ body {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-delay: 0.3s;
+  transition: font-size 1s;
 }
 
 .countdown-container {
@@ -46,6 +47,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin: 1.5rem;
 }
 
 .countdown-container > p {
@@ -53,4 +55,20 @@ body {
   text-shadow: 2px 2px 0.5rem black;
   font-size: 2.6rem;
   margin: 0.2rem 0.5rem 0.2rem 0.5rem;
+  transition: font-size 1s;
+}
+
+@media screen and (max-width: 900px) {
+  #title {
+    font-size: 3rem;
+  }
+  .countdown-container > p {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .countdown-container > p {
+    font-size: 1.3rem;
+  }
 }
