@@ -30,4 +30,4 @@ const Countdown = (date) => {
   }, 1000);
 };
 
-Countdown("April 9, 2023 24:00:00");
+Countdown("April 9, 2024 24:00:00");
